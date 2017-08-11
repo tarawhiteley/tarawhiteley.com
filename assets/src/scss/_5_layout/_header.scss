@@ -2,7 +2,66 @@
     #HEADER
 \*------------------------------------*/
 
-header {
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+.headertext {
+  width: 40%;
+  margin: -600px auto 0 auto;
+}
+
+header h1 {
+  font-size: 3.4em;
+  color: $color-offwhite;
+  text-align: center;
+}
+
+.turquoise {
+  color: $color-turquoise;
+}
+
+.arrow {
+  margin: 100px auto 0 auto;
+  width: 5%;
+}
+
+.arrow:hover {
+  background-color: $color-turquoise;
+}
 
 
+aside {
+  width: 20%;
+  height: 100%;
+  background: $color-purple;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+aside img {
+  width: 80%;
+  margin: 10% 7%;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li:active {
+  color: $color-offwhite;
+  font-size: 1.4em;
+}
+
+li:hover {
+  color: $color-turquoise;
+}
+
+.socialmedia li img {
+  width: 15%;
+  display: inline-block;
 }
