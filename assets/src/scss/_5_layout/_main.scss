@@ -1,13 +1,18 @@
 /*------------------------------------*\
     #MAIN
 \*------------------------------------*/
-
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
 
 .banner {
   background-color: $color-offwhite;
   color: $color-turquoise;
   width: 100%;
   height: 100px;
+  margin-top: 5%;
 }
 
 h2 {
@@ -16,7 +21,14 @@ h2 {
   vertical-align: middle;
 }
 
-#about, #branding, #webdesign, #custominvitations, #otherventures, #contact, #blog {
+h3 {
+  font-size: 2em;
+  color: $color-purple;
+  margin-left: 5%;
+  vertical-align: middle;
+}
+
+#services, #about, #branding, #webdesign, #custominvitations, #otherventures, #contact, #blog {
   width: 80%;
   clear: both;
 }
@@ -24,7 +36,7 @@ h2 {
 p {
   font-size: 1.6em;
   color: $color-purple;
-  margin: 60px;
+  margin: 50px;
   width: 40%;
 }
 
@@ -39,4 +51,35 @@ p {
 
 .floatright {
   float: right;
+}
+
+.gridcontainer {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  float: right;
+  margin: 10% 5% 10% 5%;
+  text-align: center;
+}
+
+.card {
+  width: calc (95% / 3);
+}
+
+.card h3 {
+  padding-top: 5%;
+}
+
+.card p {
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#services img {
+  height: 200px;
+}
+
+.marginleft {
+  margin-left: 5%;
 }
