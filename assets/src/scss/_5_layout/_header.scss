@@ -49,19 +49,31 @@ aside img {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+li a {
+  color: $color-offwhite;
+  font-size: 1.6em;
+  display: block;
+  padding: 12px 20px 12px 50px;
   text-decoration: none;
 }
 
-li:active {
-  color: $color-offwhite;
-  font-size: 1.4em;
-}
-
-li:hover {
+li a:hover {
   color: $color-turquoise;
 }
 
-.socialmedia li img {
-  width: 15%;
-  display: inline-block;
+.socialmedia {
+  width: 90%;
+  display: flex;
+  bottom: 40px;
+  position: absolute;
+  text-align: center;
+}
+
+.socialmedia li a {
+  padding: 2px;
 }

@@ -16,12 +16,4 @@ You'll need the following installed on your computer:
 
 ---
 
-# Help! I'm a newbie!
-
-## Installing node
-
-## Installing bower
-
-## Installing gulp
-
-## Installing yarn
+# animsition http://git.blivesta.com/animsition/fade-up/
