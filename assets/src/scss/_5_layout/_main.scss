@@ -69,24 +69,66 @@ p {
   width: calc( 100% / 3 );
 }
 
-.card h3 {
+.cardiframe {
+	width: 50%;
+}
+
+.card h3, .cardiframe h3 {
   padding-top: 5%;
 }
 
-.card p {
+.cardiframe h3 {
+	text-align: left;
+	width: 400px;
+	padding: 5px;
+	margin-left: 50px;
+}
+
+.card p, .cardiframe p {
   width: 80%;
   text-align: center;
   margin-top: 30px;
 }
 
-.cardgallery {
-	width: calc ( 90% / 3 );
+.cardiframe p {
+	text-align: left;
 }
 
-#services img, #custominvitations img {
+.cardgallery, .brandinggallery {
+	width: calc( 90% / 3 );
+}
+
+.webgallery {
+	width: calc( 90% / 2);
+}
+
+.linkptag {
+	font-size: 0.8em;
+	width: 300px;
+	margin: auto;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#branding img {
+	width: 99%;
+	align-items: baseline;
+}
+
+#services img, #custominvitations img, #webdesign img {
   height: 200px;
 }
 
 .marginleft {
   margin-left: 5%;
+}
+
+iframe, .modernimg img {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+iframe {
+	height: 500px;
 }
