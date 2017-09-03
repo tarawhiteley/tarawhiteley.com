@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tara Whiteley</title>
-
+    <title>Tara Whiteley, Digital Storyteller</title>
+    <link href="assets/src/img/favicon.png" rel="shortcut icon" type="image/png"/>
     <!-- TYPOGRAPHY.COM -->
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7130912/7404372/css/fonts.css" />
-
     <!-- TYPEKIT -->
     <script src="https://use.typekit.net/pan2fqz.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/dist/css/animsition.css">
     <link rel="stylesheet" href="assets/dist/css/vendor/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/dist/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/dist/css/morphext.css">
+    <link rel="stylesheet" href="assets/dist/css/animate.css">
     <link rel="stylesheet" href="assets/dist/css/main.css" />
   </head>
 
@@ -24,10 +24,11 @@
     <div class="animsition">
 
 <aside class="menu">
+  <a href="index.html" class="animsition-link logo">
+    <img src="assets/src/img/logofull_offwhite.png">
   <nav>
-    <a href="index.html" class="animsition-link"><img src="/assets/src/img/logofull_offwhite.png"></a>
-
-      <ul>
+    </a>
+      <ul class="navigation">
         <li><a href="services.html" class="animsition-link">Services</a></li>
         <li><a href="branding.html" class="animsition-link">Brand Strategy</a></li>
         <li><a href="webdesign.html" class="animsition-link">Web Design</a></li>
@@ -35,14 +36,25 @@
         <li><a href="about.html" class="animsition-link">About Me</a></li>
         <li><a href="contact.html" class="animsition-link">Contact Me</a></li>
         <li><a href="ventures.html" class="animsition-link">Other Ventures</a></li>
-        <li><a href="blog.html" class="animsition-link">Blog</a></li>
+        <!--<li><a href="blog.html" class="animsition-link">Blog</a></li>-->
       </ul>
 
       <ul class="socialmedia">
-        <li><a href="www.facebook.com/tarawhiteley"><img src="/assets/src/img/svg/facebook.svg"></a></li>
-        <li><a href="www.twitter.com/tarasue13"><img src="/assets/src/img/svg/twitter.svg"></a></li>
-        <li><a href="www.linkedin.com/tarawhiteley"><img src="/assets/src/img/svg/linkedin.svg"></a></li>
-        <li><a href="www.etsy.com/tarawhiteley"><img src="/assets/src/img/svg/etsy.svg"></a></li>
+        <li class="socialicon"><a href="www.facebook.com/tarawhiteley">
+        </a><i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+      </li>
+
+        <li class="socialicon"><a href="www.twitter.com/tarasue13">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a></li>
+
+        <li class="socialicon"><a href="www.linkedin.com/tarawhiteley">
+          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a></li>
+
+        <li class="socialicon"><a href="www.etsy.com/tarawhiteley">
+          <i class="fa fa-etsy fa-lg" aria-hidden="true"></i>
+        </a></li>
       </ul>
     </nav> <!-- closing div for left side menu -->
 </aside>
