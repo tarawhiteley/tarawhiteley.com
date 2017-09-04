@@ -23,6 +23,31 @@
 <body class="home container">
     <div class="animsition">
 
+
+      <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="services.html" class="animsition-link">Services</a>
+    <a href="branding.html" class="animsition-link">Brand Strategy</a>
+    <a href="webdesign.html" class="animsition-link">Web Design</a>
+    <a href="invitations.html" class="animsition-link">Custom Invitations</a>
+    <a href="about.html" class="animsition-link">About Me</a>
+    <a href="contact.html" class="animsition-link">Contact Me</a>
+    <a href="ventures.html" class="animsition-link">Other Ventures</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<!-- responsive nav end -->
+
 <aside class="menu">
   <a href="index.html" class="animsition-link logo">
     <img src="assets/src/img/logofull_offwhite.png">
@@ -76,6 +101,15 @@
 </section>
 
 <!-- scripts -->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/dist/js/animsition.js"></script>
 <script src="assets/dist/js/morphext.min.js"></script>

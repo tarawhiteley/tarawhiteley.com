@@ -18,7 +18,6 @@
 h2 {
   font-size: 5.2em;
   margin-left: 5%;
-  vertical-align: middle;
 }
 
 h3 {
@@ -38,6 +37,7 @@ p {
   color: $color-purple;
   margin: 30px 50px 30px 50px;
   width: 40%;
+	clear: both;
 }
 
 #about img {
@@ -113,6 +113,7 @@ p {
 #branding img {
 	width: 99%;
 	align-items: baseline;
+	margin: 30px 0;
 }
 
 #services img, #custominvitations img, #webdesign img {
@@ -144,4 +145,195 @@ iframe {
 .fa-envelope-o, .fa-phone {
 	width: 20px;
 	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+@media only screen and (max-width: 559px) {
+	#custominvitations h2 {
+		line-height: 0.8em;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	h2 {
+		line-height: 0.8em;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	* {
+		margin:0;
+		padding:0;
+		border:0;
+	}
+
+	.hidden {
+		display: block;
+	}
+
+	p, h2 {
+		margin-right: 0;
+		padding: 0;
+		text-align: center;
+		width: 95%;
+		float: none;
+		border: none;
+	}
+
+	.banner {
+		margin-left: 0;
+	}
+
+	#services, #about, #branding, #webdesign, #custominvitations, #otherventures, #contact, #blog, #branding, #contact .webgallery {
+	  width: 100%;
+		float: none;
+	  clear: both;
+		margin: 0;
+	}
+
+	#services img, #custominvitations img, #webdesign img, #branding img, .gridcontainer, article.webgallery, article.webgallery img {
+		display: block;
+	}
+
+	.card {
+		display: block;
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	h2, p, h3, #branding p, p.cardiframe, .brandinggallery, p#branding {
+		text-align: center;
+		width: 95%;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	h2 {
+		font-size: 3.5em;
+	}
+
+	.gridcontainer p, .gridcontainer h2, .webgallery, .gridcontainer, iframe, .cardiframe {
+		margin: 0;
+		padding: 0;
+		width: 90%;
+		text-align: center;
+	}
+
+	.webgallery img, article.brandingallery, .cardiframe {
+		margin: auto;
+		text-align: center;
+		margin: 20px auto;
+	}
+
+	#custominvitations p, #services p, #about p, #branding p, #webdesign p, #otherventures p, #contact p, #blog p, #branding p, #contact p {
+		padding-left: 10px;
+	}
+
+	#otherventures p, #contact p, .marginleft, #about p {
+		padding: 20px 0 10px 20px;
+		text-align: left;
+	}
+
+	#about img, img.floatright, .floatright img {
+		width: 50%;
+		float: none;
+		max-width: 500px;
+		min-width: 300px;
+		text-align: center;
+		margin: auto;
+	}
+
+	p.linktag, .linktag, p {
+		margin-right: 0;
+		padding: 0;
+	}
+
+	.cardimg {
+		margin-top: 30px;
+	}
+
+	.navigation, .logo, aside, .socialmedia {
+		display: none;
+	}
+}
+
+footer {
+	clear: both;
+	bottom: 5;
+	right: 5;
+	position: relative;
+	float: right;
+}
+
+img.footer {
+	height: 50px;
+	bottom: 5;
+	right: 5;
+	padding: 5px;
+	text-align: right;
+	right: 0;
+}
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: $color-purple; /* Black fallback color */
+    background-color: rgba(100,49,86, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: $color-offwhite;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: $color-turquoise;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
