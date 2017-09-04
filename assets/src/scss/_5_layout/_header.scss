@@ -2,14 +2,22 @@
     #HEADER
 \*------------------------------------*/
 
+header {
+  background-image: url("../../../assets/dist/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
 header img {
   width: 100%;
   height: 100%;
 }
 
 .headertext {
-  width: 40%;
-  margin: -600px auto 0 auto;
+  width: 100%;
+  margin: 325px auto 0 auto;
 }
 
 header h1 {
@@ -18,13 +26,35 @@ header h1 {
   text-align: center;
 }
 
+.entirepage {
+  position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+
 .turquoise {
   color: $color-turquoise;
 }
 
 .arrow {
-  margin: 100px auto 0 auto;
-  width: 10%;
+  margin-top: 600px;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
 }
 
 aside {

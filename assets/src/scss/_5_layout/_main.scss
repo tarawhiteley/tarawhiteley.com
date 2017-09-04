@@ -151,22 +151,28 @@ iframe {
 	display: none;
 }
 
-@media only screen and (max-width: 559px) {
-	#custominvitations h2 {
-		line-height: 0.8em;
-		align-items: center;
-	}
-}
-
 @media only screen and (max-width: 440px) {
 	h2 {
 		line-height: 0.8em;
-		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 559px) {
+	#custominvitations h2 {
+		line-height: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 675px) {
+	.headertext {
+		width: 90%;
+	}
+	header h1 {
+		font-size: 2.9em;
 	}
 }
 
 @media only screen and (max-width: 800px) {
-
 	* {
 		margin:0;
 		padding:0;
@@ -261,25 +267,25 @@ iframe {
 	.navigation, .logo, aside, .socialmedia {
 		display: none;
 	}
-}
 
-footer {
-	clear: both;
-	bottom: 5;
-	right: 5;
-	position: relative;
-	float: right;
-}
+	.socialicon {
+		padding: 3px;
+		width: calc( 80% / 4);
+		margin: auto;
+	}
 
-img.footer {
-	height: 50px;
-	bottom: 5;
-	right: 5;
-	padding: 5px;
-	text-align: right;
-	right: 0;
-}
+	.displayinline {
+		display: flex;
+	}
 
+	.fa-etsy {
+	  vertical-align: -30%;
+	}
+
+	a.animsition-link.logo, a.animsition-link.logo img {
+		height: 5%;
+		margin: auto;
+	}
 
 /* The Overlay (background) */
 .overlay {
@@ -299,7 +305,7 @@ img.footer {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 5%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -327,6 +333,7 @@ img.footer {
     right: 45px;
     font-size: 60px;
 }
+}
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -336,4 +343,55 @@ img.footer {
         top: 15px;
         right: 35px;
     }
+}
+
+@media only screen and (max-width: 900px) {
+	nav {
+		padding: 10px 10px;
+	}
+
+	a.animsition-link, ul.navigation {
+		padding: 5px 0;
+	}
+
+	ul.socialmedia {
+		width: 99%;
+	}
+
+	.fa-etsy {
+	  vertical-align: -55%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	nav {
+		padding: 10px 10px;
+	}
+
+	a.animsition-link, ul.navigation {
+		padding: 5px 0;
+	}
+
+	ul.socialmedia {
+		width: 99%;
+	}
+
+	.fa-etsy {
+		vertical-align: -55%;
+	}
+
+	ul.socialmedia {
+		clear: both;
+		width: 50%;
+		display: block;
+	}
+
+	.socialmedia {
+		margin: 5px auto;
+	}
+
+	li.socialicon, i.fa fa-etsy fa-lg, i.fa fa-linkedin fa-2x, i.fa fa-twitter fa-2x, i.fa fa-facebook fa-3x {
+		width: 10%;
+		display: block;
+	}
 }
